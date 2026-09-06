@@ -2,6 +2,8 @@ from Simpler.network import Simpler
 from random import randint
 
 def main():
+  """Configure & run simpler"""
+  
   simpler = Simpler()
 
   train_data = [
@@ -17,18 +19,18 @@ def main():
     for x, y in train_data:
       simpler.train(x, y)
 
-  print(f"ТЕСТ ({EPOCHS} Эпох)")
+  print(f"TEST ({EPOCHS} Epochs)")
   for start, end in test_data:
-    print(f"Ответ: {simpler.predict(start):.2f} | Ожидалось: {end}")
+    print(f"Answer: {simpler.predict(start):.2f} | Right: {end}")
   print("="*50)
   
   while True:
     try:
-      num = int(input(f"\nВведи число: "))
-      print(f"Ответ: {num} -> {simpler.predict(num):.2f}")
+      num = int(input(f"\nEnter a Number: "))
+      print(f"Answer: {num} -> {simpler.predict(num):.2f}")
       print("="*50)
     except ValueError:
-      print("Введи число")
+      print("Enter a Number")
 
 if __name__ == "__main__":
   main()
