@@ -1,3 +1,4 @@
 .gradle/
 build/
 __pycache__/
+.env
