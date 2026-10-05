@@ -1,2 +1,0 @@
-# Playground
-learning / other trash
