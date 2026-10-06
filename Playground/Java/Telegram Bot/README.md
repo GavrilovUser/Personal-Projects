@@ -1,4 +1,3 @@
-# Echo Bot
 Это телеграм-бот на **Java**, который повторяет текстовые сообщения.
 
 <img src="images/preview.png" width="300">

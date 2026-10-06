@@ -8,16 +8,19 @@
 ~~~Bash
 ./gradlew bootRun
 ~~~
-Или
+Либо
 ~~~Bash
 sh gradlew bootRun
 ~~~
 
 **После запуска сервера, можно вводить запросы:**
 ~~~Prompt
-http://localhost:8080/api/balance
+http://localhost:8080/api/
 ~~~
-или
+Либо
 ~~~Prompt
-http://127.0.0.1:8080/api/balance
+http://127.0.0.1:8080/api/
 ~~~
+### Запросы
+- `[GET] balance` – Возвращает класс Account
+- `[POST] click` – Добавляет единицу к счёту
