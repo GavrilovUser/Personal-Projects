@@ -18,6 +18,10 @@ public class AccountService {
       .orElseThrow(() -> new RuntimeException("Аккаунт не найден"));
   }
 
+  public ArrayList<Account> getAccounts() {
+    return accounts;
+  }
+
   public Account create(int balance) {
     return accountRepository.newAccount(balance);
   }

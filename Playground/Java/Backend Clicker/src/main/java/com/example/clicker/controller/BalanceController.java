@@ -2,6 +2,7 @@ package com.example.clicker.controller;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import com.example.clicker.model.Account;
 import com.example.clicker.service.AccountService;
 
@@ -12,6 +13,11 @@ public class BalanceController {
 
   public BalanceController(AccountService accountService) {
     this.accountService = accountService;
+  }
+
+  @GetMapping
+  public ArrayList<Account> accounts() {
+    return accountService.getAccounts();
   }
   
   @PostMapping
