@@ -4,6 +4,9 @@
 Написан на Spring Boot / Rest API
 
 ### Запуск
+**Скачать проект можно файлом:**  
+`BackendClicker.zip`
+
 **В корне проекта нужно ввести:**
 ~~~Bash
 ./gradlew bootRun
