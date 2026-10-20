@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+
+
+body {
+  background: #f1f1f1;
+}
+
+.balance {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+
+  margin-top: 28px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.buttons_list {
+  list-style: none;
+}
+
+.button_window {
+  display: grid;
+
+  margin: 0px 30px 10px 30px;
+}
+
+.button_window > button {
+  min-height: 5vh;
+  min-width: 128px;
+
+  background: #e1e1e1;
+
+  color: #000000;
+  font-size: 16px;
+
+  font-weight: 500;
+
+  border: none;
+  border-radius: 1vh;
+
+  transition: scale 0.2s ease;
+}
+
+.button_window > button:active {
+  scale: 1.05;
+}
