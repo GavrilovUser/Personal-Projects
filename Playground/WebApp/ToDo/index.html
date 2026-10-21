@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список Задач</title>
+
+  <link href="style/style.css" rel="stylesheet">
+  
+  <script src="script/logic.js" defer></script>
+</head>
+<body>
+  <h1>Заметки</h1>
+  <ul class="marks_list">
+    <p id="null_marks">Нет задач</p>
+    <template class="mark_template">
+      <li class="mark">
+        <p class="id"># id</p>
+        <p class="content">Задача</p>
+        <br>
+        <button onclick="deleteMark(this.parentElement)">Выполнить</button>
+      </li>
+    </template>
+  </ul>
+  <div class="new_mark_manage">
+    <p>Создание новой задачи</p>
+    <input type="text" placeholder="Название задачи">
+    <button>Создать</button>
+  </div>
+</body>
+</html>

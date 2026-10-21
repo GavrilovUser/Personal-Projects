@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+body {
+  margin-bottom: 200px;
+}
+
+body > h1 {
+  margin: 12px;
+}
+
+button {
+  background: #e4e4e4;
+  border: none;
+  padding: 10px;
+
+  font-weight: 500;
+
+  border-radius: 10px;
+}
+
+#null_marks {
+  text-align: center;
+}
+
+.marks_list {
+  display: grid;
+
+  background: #f1f1f1;
+  
+  padding: 12px;
+  margin: 24px;
+
+  list-style: none;
+
+  border-radius: 10px;
+
+  gap: 12px;
+}
+
+.mark {
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  
+  padding: 10px;
+}
+
+.mark > .content {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.mark > .id {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4b4b4b;
+}
+
+.new_mark_manage {
+  position: fixed;
+  display: grid;
+  background: #f1f1f1;
+
+  padding: 10px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+
+  gap: 12px;
+
+  border-radius: 10px;
+}
+
+.new_mark_manage > p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.new_mark_manage > input {
+  display: grid;
+
+  min-height: 36px;
+  border-radius: 10px;
+
+  border: 1px solid black;
+
+  padding-left: 5px;
+}
+
+.new_mark_manage > button {
+  min-height: 36px;
+
+  transition: transform 0.2s ease;
+}
