@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="script/api/account.js" defer></script>
+  
+  <title>Messanger</title>
+</head>
+<body>
+  <h1>Локальный чат</h1>
+  <div>
+    <ul class="chat_history">
+      <template class="message_template">
+        <li class="message">
+          <p class="message_author">Пользователь</p>
+          <p class="message_content">Текст сообщения</p>
+        </li>
+      </template>
+    </ul>
+  </div>
+  <div>
+    <form>
+      <input type="text" placeholder="Сообщение" required>
+      <button>Отправить</button>
+    </form>
+  </div>
+</body>
+</html>
